@@ -1,0 +1,17 @@
+name:                literate-markdown
+version:             0.1.0.0
+github:              "waddlaw/literate-markdown"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+ghc-options: -pgmL markdown-unlit
+
+dependencies:
+- base >= 4.7 && < 5
+- markdown-unlit
+
+tests:
+  readme:
+    main: README.lhs
